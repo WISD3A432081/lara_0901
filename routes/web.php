@@ -16,6 +16,7 @@ Route::get('posts', ['as' => 'posts.index', 'uses' => 'PostsController@index']);
 Route::get('posts/{id}', ['as' => 'posts.show' , 'uses' => 'PostsController@show']);
 
 Route::post('posts', ['as' => 'admin.posts.store', 'uses' =>'AdminPostsController@store']);
+Route::patch('posts/{id}', ['as' => 'admin.posts.update', 'uses' =>'AdminPostsController@update']);
 // 後台
 Route::group(['prefix' => 'admin'], function() {
     Route::get('/', ['as' => 'admin.dashboard.index', 'uses' => 'AdminDashboardController@index']);
