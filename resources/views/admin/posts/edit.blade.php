@@ -17,7 +17,7 @@
     </div>
 </div>
 <!-- /.row -->
-
++@if ($errors->any())
 <div class="row">
     <div class="col-lg-12">
         <div class="alert alert-danger alert-dismissable">
@@ -26,6 +26,7 @@
         </div>
     </div>
 </div>
++@endif
 <!-- /.row -->
 
 <div class="row">
@@ -53,7 +54,7 @@
                 <button type="submit" class="btn btn-success">更新</button>
             </div>
         </form>
-        
+
         <p>&nbsp;</p>
         <p>&nbsp;</p>
         <p>&nbsp;</p>
